@@ -15,7 +15,7 @@ header{
     display: none;
 }
 
-header,.header-block-1,.header-block-3,.block-youtube_logo,footer,.hoobies_list,main{
+header,.header-block-1,.header-block-3,.block-youtube_logo,footer,.hoobies_list,main,.sub_block-videos{
     display: flex;
     /* border: 1px solid red; */
 }
@@ -44,6 +44,11 @@ header{
     margin-left: 0.6rem;
 }
 
+.block-overflow_hobbies{
+    overflow: auto;
+    /* border: 1px solid red; */
+}
+
 .block-compass_icon{
     font-size: 1.3rem;
     background-color: rgba(128, 128, 128, 0.2);
@@ -53,6 +58,7 @@ header{
     border: 1px solid 0;
     width: 100%;
     margin-left: 0.5rem;
+    /* border: 1px solid red; */
 }
 .hoobies_list{
     /* border: 1px solid green; */
@@ -110,6 +116,41 @@ footer{
     padding: .2rem .5rem;
 }
 
+.sub_block-videos{
+    /* width: 30%; */
+    width: 96%;
+    margin: 0 auto 0 auto;
+}
+.sub_block-videos div{
+    margin: 0.7rem 0rem 0 0.4rem;
+}
+.block_videos-image{
+    /* border: 1px solid yellow; */
+    background: url("images/sport.jpg") no-repeat;
+    background-size: cover;
+    height: 10rem;
+}
+.block_videos-image img{
+    border: 1px solid black;
+    width: 100%;
+    /* height: 10vh; */
+}
+.small_icon_image{
+    background-color: red;
+    height: 1.7rem;
+    width: 1rem;
+    border-radius: 50%;
+}
+.video_text-title{
+    font-size: 0.8rem;
+    font-weight: bold;
+    /* border: 1px solid red; */
+}
+.date_text{
+    font-size: 0.6rem;
+    margin-top: 0.4rem;
+    color: #222222;
+}
 
 
 /* BREAK POINTS 
@@ -124,7 +165,7 @@ footer{
         color: white;
     }
     hr{
-        width: 80%;
+        width: 90%;
         margin: auto;
     }
     i,.block-letter_text,.block-youtube_logo{
@@ -139,9 +180,7 @@ footer{
     .header-block-1,.header-block-2,.header-block-3,.block-input_search,.input-search{
         display: flex;
     }
-    .block-overflow_hobbies{
-        overflow: auto;
-    }
+    
     .header-block-1,.header-block-1 div{
         /* border: 1px solid red; */
         align-items: center;
