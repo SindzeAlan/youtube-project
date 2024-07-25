@@ -44,16 +44,28 @@ header{
     margin-left: 0.6rem;
 }
 
+.block-compass_icon{
+    font-size: 1.3rem;
+    background-color: rgba(128, 128, 128, 0.2);
+    /* margin-left: 0.5rem; */
+}
 .main_section-all_videos{
-    /* border: 1px solid red; */
+    border: 1px solid 0;
+    width: 100%;
+    margin-left: 0.5rem;
+}
+.hoobies_list{
+    /* border: 1px solid green; */
     overflow: auto;
-    width: 80%;
+    height: 3vh;
 }
 .hoobies_list .nav_links{
-    background-color: rgba(128, 128, 128, .2);
-    /* margin: 0 0.5rem; */
+    background-color: rgba(128, 128, 128, 0.2);
+    margin: 0 0.5rem;
     font-size: 0.8rem;
-    /* border-radius: 1rem; */
+    font-weight: bold;
+    padding: 0.3rem;
+    border-radius: 4px;
 }
 
 
@@ -102,6 +114,10 @@ footer{
     body{
         background-color: #0f0f0f;
         color: white;
+    }
+    hr{
+        width: 80%;
+        margin: auto;
     }
     i,.block-letter_text,.block-youtube_logo{
         cursor: pointer;
@@ -179,25 +195,37 @@ footer{
         margin-right: 1.5rem;
     }
 
-    main{
-        margin: 0.5rem;
+    .main_section-all_videos{
+        border: 1px solid red;
+        overflow: auto;
+        width: 80%;
+        height: 100%;
+    }
+    .hoobies_list{
+        height: 100%;
+    }
+    .block-navigation_links{
+        flex: 1;
+        height: 84vh;
+        overflow: scroll;
+        /* border: 1px solid; */
     }
     .links{
-        border: 1px solid red;
-        background-color: #222222;
+        /* border: 1px solid red; */
         border-radius: 10px;
-        /* padding: 0rem 2rem 0 0.5rem; */
         margin: 1rem 0rem ;
         font-size: 1.2rem;
     }
+    .except{
+        margin-top: 0;
+    }
     .links:hover{
         background-color: #222222;
+        cursor: pointer;
     }
     .nav-with-span span{
-        /* margin: 0 5rem 0 1rem; */
-        /* border: 1px solid yellow */
-        /* width: 100%;
-        align-self: center; */
+        margin-left: 1rem;
+        /* border: 1px solid yellow */      
     }
     .nav-with-span{
         padding: 0.5rem 0;
@@ -205,10 +233,6 @@ footer{
         width: 100%;
         padding-left:  1rem;
     }
-    .hoobies_list{
-        overflow: auto;
-    }
-
     
 
 }
