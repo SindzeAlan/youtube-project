@@ -57,7 +57,8 @@ header{
 .hoobies_list{
     /* border: 1px solid green; */
     overflow: auto;
-    height: 3vh;
+    width: 100vw;
+    /* height: 3vh; */
 }
 .hoobies_list .nav_links{
     background-color: rgba(128, 128, 128, 0.2);
@@ -66,6 +67,13 @@ header{
     font-weight: bold;
     padding: 0.3rem;
     border-radius: 4px;
+}
+
+.block-videos{
+    border: 1px solid white;
+    height: 71vh;
+    overflow: auto;
+    margin-top: 2rem;
 }
 
 
@@ -130,6 +138,9 @@ footer{
     }
     .header-block-1,.header-block-2,.header-block-3,.block-input_search,.input-search{
         display: flex;
+    }
+    .block-overflow_hobbies{
+        overflow: auto;
     }
     .header-block-1,.header-block-1 div{
         /* border: 1px solid red; */
@@ -197,7 +208,6 @@ footer{
 
     .main_section-all_videos{
         border: 1px solid red;
-        overflow: auto;
         width: 80%;
         height: 100%;
     }
@@ -206,7 +216,7 @@ footer{
     }
     .block-navigation_links{
         flex: 1;
-        height: 84vh;
+        height: 85vh;
         overflow: scroll;
         /* border: 1px solid; */
     }
