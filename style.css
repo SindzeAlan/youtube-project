@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* border: 1px solid red; */
+}
+
+header{
+    /* border: 1px solid red; */
+    margin: 0.5rem;
+}
+
+.header-block-2,.block-settings_icon,.block-letter_text,.block-navigation_links{
+    display: none;
+}
+
+header,.header-block-1,.header-block-3,.block-youtube_logo,footer,.hoobies_list,main{
+    display: flex;
+    /* border: 1px solid red; */
+}
+header{
+    justify-content: space-between;
+}
+.block-youtube_logo .youtube-icon{
+    color: red;
+    font-size: 1.5rem;
+}
+.block-youtube_logo .youtube-text{
+    /* border: 1px solid red; */
+    font-weight: bold;
+    align-self: center;
+    margin: 0 0.1rem;
+}
+.header-block-3{
+    /* border: 1px solid red; */
+    align-items: center;
+}
+.header-block-3 .block-video_icon, .header-block-3 .block-bell_icon{
+    margin: 0 0.6rem;
+    color: black;
+}
+.header-block-3 .block-search{
+    margin-left: 0.6rem;
+}
+
+.main_section-all_videos{
+    /* border: 1px solid red; */
+    overflow: auto;
+    width: 80%;
+}
+.hoobies_list .nav_links{
+    background-color: rgba(128, 128, 128, .2);
+    /* margin: 0 0.5rem; */
+    font-size: 0.8rem;
+    /* border-radius: 1rem; */
+}
+
+
+footer{
+    /* border: 1px solid red; */
+    margin: 0.5rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+}
+.footer-block{
+    margin: auto;
+    /* border: 1px solid red; */
+}
+.footer-block div{
+    text-align: center;
+}
+.footer-block p{
+    font-size: 0.9rem;
+}
+.footer-block div i{
+    font-size: 1.3rem;
+}
+.block-add_icon div i{
+    color: red;
+    font-size: 3rem;
+}
+.account{
+    background-color: #ec407a;
+    color: white;
+    font-weight: 200;
+    border-radius: 50%;
+    padding: .2rem .5rem;
+}
+
+
+
+/* BREAK POINTS 
+/// ON COMPUTERS WITH SCREENS WITH MINIMUM LENGTH OF 800PX
+*/
+
+
+
+@media (min-width: 800px) {
+    body{
+        background-color: #0f0f0f;
+        color: white;
+    }
+    i,.block-letter_text,.block-youtube_logo{
+        cursor: pointer;
+    }
+    .block-search,footer,.block-compass_icon{
+        display: none;
+    }
+    .header-block-2,.block-settings_icon,.block-letter_text,.block-navigation_links{
+        display: block;
+    }
+    .header-block-1,.header-block-2,.header-block-3,.block-input_search,.input-search{
+        display: flex;
+    }
+    .header-block-1,.header-block-1 div{
+        /* border: 1px solid red; */
+        align-items: center;
+        font-size: 1.3rem;
+    }
+    .header-block-1 .block-settings_icon{
+        margin: 0 1.5rem 0 1rem;
+    }
+    .header-block-2{
+        /* border: 1px solid red; */
+        flex: 1;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+    .block-input_search .input-search{
+        background-color: #222222;
+        border-radius: 20px;
+        align-self: center;
+    }
+
+    #input-url-search{
+        width: 35rem;
+        background-color: #121212;
+        margin: 0.1rem 0 0.1rem 0.1rem;
+        padding: 0.7rem 0 0.7rem 2rem;
+        color: white;
+        border-radius: 20px 0 0 20px;
+        border: none;
+        outline: none;
+    }
+    #input-url-search::placeholder{
+        color: white;
+        font-weight: bold;
+    }
+
+    .search-icon{
+        font-size: 1.3rem;
+        margin: 0 1.3rem;
+        align-self: center;
+    }
+    .block-microphone{
+        /* border: 1px solid red; */
+        margin: 0 1rem;
+        font-size: 1.4rem;
+        padding: .6rem 0.8rem;
+        border-radius: 50%;
+        background-color: #222222;
+        cursor: pointer;
+    }
+    .header-block-3 div,.header-block-3 i{
+        color: white;
+        font-size: 1.3rem;
+        margin: 0 1.5rem 0 0;
+        background-color: transparent;
+    }
+    .block-letter_text{
+        background-color: #ec407a;
+        color: white;
+        font-weight: bold;
+        padding: .6rem .9rem;
+        border-radius: 50%;
+        margin-right: 1.5rem;
+    }
+
+    main{
+        margin: 0.5rem;
+    }
+    .links{
+        border: 1px solid red;
+        background-color: #222222;
+        border-radius: 10px;
+        /* padding: 0rem 2rem 0 0.5rem; */
+        margin: 1rem 0rem ;
+        font-size: 1.2rem;
+    }
+    .links:hover{
+        background-color: #222222;
+    }
+    .nav-with-span span{
+        /* margin: 0 5rem 0 1rem; */
+        /* border: 1px solid yellow */
+        /* width: 100%;
+        align-self: center; */
+    }
+    .nav-with-span{
+        padding: 0.5rem 0;
+        /* border: 1px solid green; */
+        width: 100%;
+        padding-left:  1rem;
+    }
+    .hoobies_list{
+        overflow: auto;
+    }
+
+    
+
+}
