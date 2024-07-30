@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,109 +6,143 @@
     /* border: 1px solid red; */
 }
 
-header{
+header {
     /* border: 1px solid red; */
     margin: 0.5rem;
 }
 
-.header-block-2,.block-settings_icon,.block-letter_text,.block-navigation_links{
+.header-block-2,
+.block-settings_icon,
+.block-letter_text,
+.block-navigation_links {
     display: none;
 }
 
-header,.header-block-1,.header-block-3,.block-youtube_logo,footer,.hoobies_list,main,.sub_block-videos{
+header,
+.header-block-1,
+.header-block-3,
+.block-youtube_logo,
+footer,
+main,
+.sub_block-videos {
     display: flex;
     /* border: 1px solid red; */
 }
-header{
+
+header {
     justify-content: space-between;
 }
-.block-youtube_logo .youtube-icon{
+
+.block-youtube_logo .youtube-icon {
     color: red;
     font-size: 1.5rem;
 }
-.block-youtube_logo .youtube-text{
+
+.block-youtube_logo .youtube-text {
     /* border: 1px solid red; */
     font-weight: bold;
     align-self: center;
     margin: 0 0.1rem;
 }
-.header-block-3{
+
+.header-block-3 {
     /* border: 1px solid red; */
     align-items: center;
 }
-.header-block-3 .block-video_icon, .header-block-3 .block-bell_icon{
+
+.header-block-3 .block-video_icon,
+.header-block-3 .block-bell_icon {
     margin: 0 0.6rem;
     color: black;
 }
-.header-block-3 .block-search{
+
+.header-block-3 .block-search {
     margin-left: 0.6rem;
 }
 
-.block-overflow_hobbies{
+.block-overflow_hobbies {
     overflow: auto;
+    margin-left: 0.5rem;
     /* border: 1px solid red; */
 }
 
-.block-compass_icon{
+.block-compass_icon {
     font-size: 1.3rem;
     background-color: rgba(128, 128, 128, 0.2);
     /* margin-left: 0.5rem; */
 }
-.main_section-all_videos{
+
+.main_section-all_videos {
     border: 1px solid 0;
     width: 100%;
-    margin-left: 0.5rem;
+    height: 85vh;
+    overflow: auto;
     /* border: 1px solid red; */
 }
-.hoobies_list{
-    /* border: 1px solid green; */
-    overflow: auto;
-    width: 100vw;
-    /* height: 3vh; */
+
+.hoobies_list {
+    display: flex;
+    /* Enables Flexbox layout */
+    /* flex-wrap: nowrap; */
+    /* Prevents wrapping to the next line */
+    overflow-x: auto;
+    /* Allows horizontal scrolling if content overflows */
+    /* border: 1px solid #ccc; */
+    /* Optional: to visualize the container */
 }
-.hoobies_list .nav_links{
-    background-color: rgba(128, 128, 128, 0.2);
-    margin: 0 0.5rem;
-    font-size: 0.8rem;
-    font-weight: bold;
-    padding: 0.3rem;
+
+.hoobies_list .nav_links {
     border-radius: 4px;
+    background-color: rgba(128, 128, 128, 0.2);
+    cursor: pointer; 
+    flex: 0 0 auto;
+    padding: 10px;
+    /* background-color: #f0f0f0;
+    border: 1px solid #ddd; */
+    margin-right: 10px;
+    /* Adds space between items */
 }
 
-.block-videos{
-    border: 1px solid white;
-    height: 71vh;
-    overflow: auto;
+.block-videos {
+    /* border: 1px solid white; */
+    /* overflow: auto; */
     margin-top: 2rem;
+    cursor: pointer;
 }
 
 
-footer{
+footer {
     /* border: 1px solid red; */
-    margin: 0.5rem;
+    /* margin: 0.5rem; */
     width: 100%;
     position: fixed;
     bottom: 0;
     justify-content: space-between;
 }
-.footer-block{
+
+.footer-block {
     margin: auto;
     /* border: 1px solid red; */
 }
-.footer-block div{
+
+.footer-block div {
     text-align: center;
 }
-.footer-block p{
+
+.footer-block p {
     font-size: 0.9rem;
 }
-.footer-block div i{
+
+.footer-block div i {
     font-size: 1.3rem;
 }
-.block-add_icon div i{
+
+.block-add_icon div i {
     color: red;
     font-size: 3rem;
 }
-.account{
+
+.account {
     background-color: #ec407a;
     color: white;
     font-weight: 200;
@@ -116,40 +150,62 @@ footer{
     padding: .2rem .5rem;
 }
 
-.sub_block-videos{
+.sub_block-videos {
     /* width: 30%; */
-    width: 96%;
-    margin: 0 auto 0 auto;
+    /* border: 1px solid red;   */
 }
-.sub_block-videos div{
+
+.sub_block-videos div {
     margin: 0.7rem 0rem 0 0.4rem;
 }
-.block_videos-image{
+
+.block_videos-image {
     /* border: 1px solid yellow; */
-    background: url("images/sport.jpg") no-repeat;
-    background-size: cover;
     height: 10rem;
 }
-.block_videos-image img{
-    border: 1px solid black;
+
+.block_videos-image img {
+    /* border: 1px solid green; */
+    height: 100%;
     width: 100%;
     /* height: 10vh; */
 }
-.small_icon_image{
+
+.small_icon_image {
     background-color: red;
-    height: 1.7rem;
-    width: 1rem;
+    height: 2rem;
+    width: 2rem;
     border-radius: 50%;
 }
-.video_text-title{
+
+.small_icon_image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.block-description_text {
+    /* border: 1px solid red; */
+    width: 90%;
+}
+
+.video_text-title {
     font-size: 0.8rem;
     font-weight: bold;
+    width: 95%;
     /* border: 1px solid red; */
 }
-.date_text{
+
+.date_text {
     font-size: 0.6rem;
     margin-top: 0.4rem;
     color: #222222;
+}
+
+.sub_block-videos .setting-icon {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    /* border: 1px solid red; */
 }
 
 
@@ -160,48 +216,75 @@ footer{
 
 
 @media (min-width: 800px) {
-    body{
+    body {
         background-color: #0f0f0f;
         color: white;
     }
-    hr{
+
+    hr {
         width: 90%;
         margin: auto;
     }
-    i,.block-letter_text,.block-youtube_logo{
+
+    i,
+    .block-letter_text,
+    .block-youtube_logo {
         cursor: pointer;
     }
-    .block-search,footer,.block-compass_icon{
+
+    .block-search,
+    footer,
+    .block-compass_icon {
         display: none;
     }
-    .header-block-2,.block-settings_icon,.block-letter_text,.block-navigation_links{
+
+    .header-block-2,
+    .block-settings_icon,
+    .block-letter_text,
+    .block-navigation_links {
         display: block;
     }
-    .header-block-1,.header-block-2,.header-block-3,.block-input_search,.input-search{
+
+    .header-block-1,
+    .header-block-2,
+    .header-block-3,
+    .block-input_search,
+    .input-search {
         display: flex;
     }
-    
-    .header-block-1,.header-block-1 div{
+
+    .flex-overflow_my_videos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 1.5rem;
+        column-gap: 1rem;
+    }
+
+    .header-block-1,
+    .header-block-1 div {
         /* border: 1px solid red; */
         align-items: center;
         font-size: 1.3rem;
     }
-    .header-block-1 .block-settings_icon{
+
+    .header-block-1 .block-settings_icon {
         margin: 0 1.5rem 0 1rem;
     }
-    .header-block-2{
+
+    .header-block-2 {
         /* border: 1px solid red; */
         flex: 1;
         justify-content: center;
         padding: 1rem 0;
     }
-    .block-input_search .input-search{
+
+    .block-input_search .input-search {
         background-color: #222222;
         border-radius: 20px;
         align-self: center;
     }
 
-    #input-url-search{
+    #input-url-search {
         width: 35rem;
         background-color: #121212;
         margin: 0.1rem 0 0.1rem 0.1rem;
@@ -211,17 +294,19 @@ footer{
         border: none;
         outline: none;
     }
-    #input-url-search::placeholder{
+
+    #input-url-search::placeholder {
         color: white;
         font-weight: bold;
     }
 
-    .search-icon{
+    .search-icon {
         font-size: 1.3rem;
         margin: 0 1.3rem;
         align-self: center;
     }
-    .block-microphone{
+
+    .block-microphone {
         /* border: 1px solid red; */
         margin: 0 1rem;
         font-size: 1.4rem;
@@ -230,13 +315,16 @@ footer{
         background-color: #222222;
         cursor: pointer;
     }
-    .header-block-3 div,.header-block-3 i{
+
+    .header-block-3 div,
+    .header-block-3 i {
         color: white;
         font-size: 1.3rem;
         margin: 0 1.5rem 0 0;
         background-color: transparent;
     }
-    .block-letter_text{
+
+    .block-letter_text {
         background-color: #ec407a;
         color: white;
         font-weight: bold;
@@ -245,43 +333,78 @@ footer{
         margin-right: 1.5rem;
     }
 
-    .main_section-all_videos{
-        border: 1px solid red;
+    .main_section-all_videos {
+        /* border: 1px solid red; */
         width: 80%;
+        height: 84vh;
+        margin: 0 1rem 0 1rem;
+    }
+
+    .hoobies_list {
         height: 100%;
     }
-    .hoobies_list{
-        height: 100%;
-    }
-    .block-navigation_links{
+
+    .block-navigation_links {
         flex: 1;
         height: 85vh;
         overflow: scroll;
         /* border: 1px solid; */
     }
-    .links{
+
+    .links {
         /* border: 1px solid red; */
         border-radius: 10px;
-        margin: 1rem 0rem ;
-        font-size: 1.2rem;
+        margin: 1rem 0rem;
+        font-size: 1.1rem;
     }
-    .except{
+
+    .except {
         margin-top: 0;
     }
-    .links:hover{
+
+    .links:hover {
         background-color: #222222;
         cursor: pointer;
     }
-    .nav-with-span span{
+
+    .nav-with-span span {
         margin-left: 1rem;
-        /* border: 1px solid yellow */      
+        /* border: 1px solid yellow */
     }
-    .nav-with-span{
+
+    .nav-with-span {
         padding: 0.5rem 0;
         /* border: 1px solid green; */
         width: 100%;
-        padding-left:  1rem;
+        padding-left: 1rem;
     }
-    
+
+    .block_videos-image {
+        /* border: 1px solid yellow; */
+        height: 12rem;
+    }
+
+    .block_videos-image img {
+        /* border: 1px solid white; */
+        border-radius: 10px;
+    }
+
+    .date_text {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.7rem;
+    }
+
+    .date_text span {
+        display: block;
+        margin-top: 0.6rem;
+    }
+    .sub_block-videos .setting-icon{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .block-videos {
+        border: 1px solid 255;
+    }
 
 }
